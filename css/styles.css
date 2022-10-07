@@ -64,15 +64,13 @@ img {
   letter-spacing: 0.02em;
 }
 
-/* Шапка */
-
 /* Верхній логотип */
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
 }
+
+/* Логотип */
 
 .logo-header {
   color: #000000;
@@ -94,7 +92,22 @@ img {
 
 /* Навігація */
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  gap: 50px;
+  margin-left: 94px;
+}
+
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 }
 
@@ -109,8 +122,17 @@ img {
 
 /* Контакти */
 
+.contact {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+}
+
 .contact-link {
   color: var(--primary-text-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-link:hover,
@@ -128,6 +150,9 @@ img {
 
 .hero-title {
   margin-bottom: 30px;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--primary-bg-color);
 
@@ -137,10 +162,6 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-button {
-  cursor: pointer;
 }
 
 .button {
@@ -159,6 +180,11 @@ button {
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
+}
+
+.all-content {
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /* Переваги */
@@ -182,6 +208,21 @@ button {
   overflow: hidden;
 }
 
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feature-list .item {
+  width: 270px;
+}
+
+.specialization-list {
+  display: flex;
+  gap: 30px;
+}
+
 .feature-list-title {
   margin-bottom: 10px;
 
@@ -196,7 +237,7 @@ button {
   line-height: 1.71;
 }
 
-/* Сфера діяльності та команда*/
+/* Сфера діяльності*/
 
 .specialization {
   padding-bottom: 94px;
@@ -212,6 +253,8 @@ button {
   text-align: center;
 }
 
+/* Команда */
+
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -220,10 +263,24 @@ button {
 }
 
 .team-list {
+  display: flex;
+  gap: 30px;
 }
 
-.team-list-image {
-  margin-bottom: 30px;
+.team-list .item {
+  background-color: var(--primary-bg-color);
+  width: 270px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-wrap {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: auto;
+  padding-right: auto;
 }
 
 .team-list-title {
@@ -262,13 +319,9 @@ button {
 
 /* Адреса */
 
-.address-list {
-}
-
 .address-postal,
 .contact-footer {
   display: inline-block;
-  font-style: normal;
 
   text-decoration: none;
 
@@ -303,7 +356,16 @@ button {
   padding-bottom: 94px;
 }
 
+.portfolio-button-list {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+
+  margin-bottom: 59px;
+}
+
 .portfolio-button-list button {
+  min-width: 73px;
   border-radius: 4px;
   border: none;
 
@@ -317,16 +379,41 @@ button {
   text-align: center;
 }
 
+.portfolio-button-text.small-padding {
+  padding: 6px 25px;
+}
+
 .portfolio-button-list button:hover,
 .portfolio-button-list button:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
 }
 
+.portfolio-button-text {
+  display: block;
+  padding: 6px 22px;
+}
+
 /* Зразки проектів */
+
+.portfolio-sample-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.portfolio-sample-box {
+  width: 370px;
+  border: 1px solid #eeeeee;
+}
 
 .portfolio-image {
   margin-bottom: 20px;
+}
+
+.portfolio-wrap {
+  padding: 20px 24px;
 }
 
 .portfolio-sample-list-title {
