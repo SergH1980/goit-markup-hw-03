@@ -144,6 +144,12 @@ img {
 }
 
 /* Основний */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* Гергой */
 
 .hero {
@@ -181,7 +187,6 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
@@ -193,8 +198,7 @@ img {
 /* Переваги */
 
 .feature {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0;
 }
 
 .visually-hidden {
@@ -236,10 +240,6 @@ img {
 
 /* Сфера діяльності*/
 
-.specialization {
-  padding-bottom: 94px;
-}
-
 .specialization-list {
   display: flex;
   gap: 30px;
@@ -259,9 +259,6 @@ img {
 /* Команда */
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
-
   background-color: var(--third-bg-color);
 }
 
@@ -356,10 +353,6 @@ img {
 /* Портфоліо */
 
 /* Кнопки */
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .portfolio-button-list {
   display: flex;
